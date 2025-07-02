@@ -36,7 +36,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import Loading from "./components/common/Loading";
 import Project from "./pages/Project";
 import Chatbot from "./pages/Chatbot";
-
+import { Analytics } from "@vercel/analytics/react"
 function App() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -161,6 +161,7 @@ function App() {
       </Routes>
       <BackToTop />
       <Chatbot />
+      <Analytics />
     </div>
   );
 }
